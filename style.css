@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Gentium+Book+Plus:ital@1&family=Playfair+Display:ital@1&family=Roboto:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ /* start global style */
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display' ;
+    font-family: 'Gentium Book Plus';
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+:root{
+
+    --sacend-color:#777;
+}
+
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+/* small */
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+    }
+    /* medium */
+    @media(min-width:992px){
+        .container{
+            width: 970px;
+        }
+        .special-heading{
+            font-size: 60px;
+        }
+        .special-heading+p{
+            margin-top: -13;
+        }
+        }
+    
+        /* large */
+        @media(mid-width:1200px){
+    .container{
+        width: 1170px;
+    }
+        }
+
+        /* end global style */
+
+/* start style heder */
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.header .container .logo{
+    display: flex;
+}
+.header .container .logo .label{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header .container .logo .label h3{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Edu VIC WA NT Beginner';
+    padding-left: 10px;
+}
+
+.header .container .logo .label p{
+    font-size: 9px;
+    color: var(--sacend-color);
+    padding-left: 10px;
+}
+
+/* end style heder */
+/* start style uper imge  */
+
+.up-img .container .label{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.up-img .container {
+    position: relative;
+}
+
+.up-img .container::before{
+    content: "";
+    background-color: var(--sacend-color);
+    width: calc(90% + 70px);
+    height: 10px;
+    position: absolute;
+    top: -20px;
+    left: 16px;
+}
+
+
+.up-img .container h1{
+margin-top: 30px;
+margin-bottom: 0;
+padding-bottom: 0;
+
+}
+.up-img .container .label p{
+font-size: 9px;
+color: var(--sacend-color);
+}
+
+.up-img .container .label .logo-print span{
+    color: var(--sacend-color);
+    padding-right: 15px;
+}
+.up-img .container .label .logo-print img{
+    width: 20px;
+}
+/* end style uper imge */
+
+/* start style about */
+.background .container .cho-img{
+background-image: url(image/choco-pizza.png);
+background-size: contain;
+height: 100vh;
+width: 100%;
+background-repeat: no-repeat;
+}
+.background .container .par p::first-letter{
+ 
+    padding-left: 40px;
+}
+.background .container .par p{
+    font-size: 18px;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+/* end style about */
+
+/*  stard style manu */
+.manu .container ul{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns:repeat(auto-fill,minmax(330px,1fr));
+    
+    
+}
+
+.manu .container ul{
+    margin:30px;
+    padding: 30px;
+    padding-left: 50px;
+    gap: 10px;
+    background-image: url(image/list-bg.png);
+    background-size: cover;
+
+}
+.manu .container ul li:last-child span{
+    display: block;
+    margin-left: 20px;
+}
+
+.manu .container ul li input:checked~label{
+    text-decoration:line-through;
+
+}
+/* end style manu */
+
+/* start style user par */
+
+.user .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.user .container{
+    position: relative;
+}
+.user .container::before{
+    content: "";
+    background-color: var(--sacend-color);
+    width: calc(90% + 70px);
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    left: 16px;
+
+}
+
+.user .container h4{
+    font-size: 20px;
+    line-height: 2.3;
+}
+
+.user .container p{
+font-size: 18px;
+}
+
+.user .container button{
+    width: 220px;
+    height: 57px;
+    margin-top: 30px;
+    background-color:#b13000 ;
+}
+/* end style user par  */
+
+
+.footer .container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px
+}
+
+.footer .container img{
+width: 35px;
+height: 35px;
+margin-bottom: 20px;
+}
+
+.footer .container .text{
+    line-height: 1.6;
+    font-size: 10px;
+    color:var(--sacend-color);
+}
+
